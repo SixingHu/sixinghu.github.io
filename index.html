@@ -88,6 +88,9 @@
     .contact { display:flex; align-items:center; justify-content:space-between; gap:20px; }
     .contact p { color:var(--muted); font-size:14px; }
     .contact a { white-space:nowrap; font-size:14px; }
+    .references { list-style:none; margin:0; padding:0; display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:22px 30px; font-size:14px; }
+    .references li { min-width:0; }
+    .references a { overflow-wrap:anywhere; }
     footer { margin-top:65px; border-top:1px solid var(--line); padding-top:20px; display:flex; justify-content:space-between; gap:15px; color:var(--muted); font-size:11px; }
     @media(max-width:900px) { .layout { gap:45px; grid-template-columns:205px minmax(0,1fr); padding:50px 30px 25px; } h1 { font-size:38px; } }
     @media(max-width:680px) { .portrait { max-width:160px; } .layout { display:block; padding:32px 23px; } aside { position:static; border-bottom:1px solid var(--line); padding-bottom:25px; margin-bottom:35px; } .monogram { width:42px; height:42px; font-size:20px; margin-bottom:15px; } .identity { font-size:29px; } .chinese { display:inline; font-size:16px; margin-left:12px; } .role { margin-top:15px; } nav { flex-direction:row; gap:12px 20px; flex-wrap:wrap; margin-top:19px; padding-top:15px; } .sidebar-links { margin-top:17px; } h1 { font-size:35px; } .intro { font-size:16px; } section { margin-top:42px; } h2 { font-size:26px; } .contact { display:block; } footer { margin-top:45px; flex-wrap:wrap; } }
@@ -105,7 +108,7 @@
     <p class="affiliation">Research in Operations Management</p>
     <p class="affiliation">School of Management and Economics<br>The Chinese University of<br>Hong Kong, Shenzhen</p>
     <nav aria-label="Main navigation">
-      <a href="#about">About</a><a href="#research">Working papers</a><a href="#current">Industry experience</a><a href="#background">Background</a><a href="#contact">Contact</a>
+      <a href="#about">About</a><a href="#research">Working papers</a><a href="#current">Industry experience</a><a href="#background">Background</a><a href="#contact">Contact</a><a href="#references">References</a>
     </nav>
     <div class="sidebar-links"><a href="https://sme.cuhk.edu.cn/en/teacher/3417">University profile</a><a href="https://github.com/SixingHu">GitHub</a></div>
   </aside>
@@ -122,7 +125,6 @@
     </header>
     <section id="research" aria-labelledby="research-heading">
       <h2 id="research-heading">Working papers</h2>
-      
       <article>
         <h3>Revisiting Gig Labor Supply Curves: Evidence from a Logistics Platform</h3>
         <p class="authors">With Yifan Feng and Jussi Keppo</p><span class="status">Under review at MSOM</span>
@@ -161,11 +163,20 @@
         <dt>2017–2021</dt><dd><strong>Harbin Institute of Technology</strong>B.S. in Information Management and Information System</dd>
         <dt>2019–2020</dt><dd><strong>University of California, Berkeley</strong>One-year academic exchange during undergraduate studies</dd>
       </dl>
-      
     </section>
     <section id="contact" aria-labelledby="contact-heading">
       <h2 id="contact-heading">Contact</h2>
       <div class="contact"><p>School of Management and Economics<br>CUHK-Shenzhen · Shenzhen, China</p><a href="mailto:husixing@cuhk.edu.cn">husixing@cuhk.edu.cn ↗</a></div>
+    </section>
+    <section id="references" aria-labelledby="references-heading">
+      <h2 id="references-heading">References</h2>
+      <ul class="references">
+        <li><strong><a href="https://myweb.cuhk.edu.cn/zhangyiming">Yiming Zhang</a></strong><br><a href="mailto:zhangyiming@cuhk.edu.cn">zhangyiming@cuhk.edu.cn</a></li>
+        <li><strong><a href="https://qiupingyu.com/">Qiuping Yu</a></strong><br><a href="mailto:qiuping.yu@georgetown.edu">qiuping.yu@georgetown.edu</a></li>
+        <li><strong><a href="https://www.yunanji.com/home">Yunan Ji</a></strong><br><a href="mailto:yunan.ji@georgetown.edu">yunan.ji@georgetown.edu</a></li>
+        <li><strong><a href="https://www.jussikeppo.com/">Jussi Keppo</a></strong><br><a href="mailto:keppo@nus.edu.sg">keppo@nus.edu.sg</a></li>
+        <li><strong><a href="https://sites.google.com/view/yifanfeng/">Yifan Feng</a></strong><br><a href="mailto:yifan.feng@nus.edu.sg">yifan.feng@nus.edu.sg</a></li>
+      </ul>
     </section>
     <footer><span>© 2026 Sixing Hu · 胡思行</span><a href="#about">Back to top ↑</a></footer>
   </main>
